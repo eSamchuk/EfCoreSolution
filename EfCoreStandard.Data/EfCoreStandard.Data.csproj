@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.0;netstandard2.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200320135315_initial create.cs" />
+    <Compile Remove="Migrations\20200320135315_initial create.Designer.cs" />
+    <Compile Remove="Migrations\20200320141354_fk removed.cs" />
+    <Compile Remove="Migrations\20200320141354_fk removed.Designer.cs" />
+    <Compile Remove="Migrations\20200320141430_init.cs" />
+    <Compile Remove="Migrations\20200320141430_init.Designer.cs" />
+    <Compile Remove="Migrations\20200320141503_init.cs" />
+    <Compile Remove="Migrations\20200320141503_init.Designer.cs" />
+    <Compile Remove="Migrations\20200322181252_many-to-many.cs" />
+    <Compile Remove="Migrations\20200322181252_many-to-many.Designer.cs" />
+    <Compile Remove="Migrations\20200322181415_many-to-many.cs" />
+    <Compile Remove="Migrations\20200322181415_many-to-many.Designer.cs" />
+    <Compile Remove="Migrations\20200322181424_many-to-many.cs" />
+    <Compile Remove="Migrations\20200322181424_many-to-many.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EfCoreStandard.Domain\EfCoreStandard.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
